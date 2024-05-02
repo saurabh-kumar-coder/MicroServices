@@ -1,7 +1,6 @@
 package com.userservice.controller;
 
 import java.util.List;
-import java.util.UUID;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -15,10 +14,9 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.userservice.entity.User;
 import com.userservice.service.UserService;
-import com.userservice.userserviceimpl.UserServiceImplement;
 
 @RestController
-@RequestMapping("/user")
+@RequestMapping("/users")
 public class UserController {
 	
 	@Autowired
