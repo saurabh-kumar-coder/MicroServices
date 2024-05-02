@@ -1,4 +1,5 @@
-package com.userservice.entity;
+package com.hotelservice.entity;
+
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
@@ -10,19 +11,19 @@ import lombok.Setter;
 
 @Getter
 @Setter
-@NoArgsConstructor
 @AllArgsConstructor
+@NoArgsConstructor
 @Entity
-@Table(name = "USER_TABLE")
-public class User {
+@Table(name = "HOTEL_TABLE")
+public class Hotel {
+
 	@Id
 	@Column(name = "ID")
-	private String userId;
-	@Column(name = "NAME")
-	private String name;
-	@Column(name = "EMAIL", unique = true)
-	private String email;
-	@Column(name = "ABOUT")
-	private String about;
+	private String id;
 	
+	private String name;
+	
+	private String location;
+	
+	private String about;
 }
