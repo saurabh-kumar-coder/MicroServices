@@ -18,8 +18,8 @@ import lombok.Setter;
 public class Hotel {
 
 	@Id
-	@Column(name = "ID")
-	private String id;
+	@Column(name = "HOTEL_ID")
+	private String hotelId;
 	
 	private String name;
 	

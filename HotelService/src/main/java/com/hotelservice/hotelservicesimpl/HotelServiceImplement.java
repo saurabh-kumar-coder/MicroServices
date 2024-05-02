@@ -20,7 +20,7 @@ public class HotelServiceImplement implements HotelService {
 	@Override
 	public Hotel create(Hotel hotel) {
 		// TODO Auto-generated method stub
-		hotel.setId(UUID.randomUUID().toString());
+		hotel.setHotelId(UUID.randomUUID().toString());
 		Hotel newHotel = hotel;
 		return hotelRepository.save(newHotel);
 	}
